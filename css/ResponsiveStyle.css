@@ -1,0 +1,111 @@
+@media screen and (max-width: 1300px) {
+	.services .tab-ul li a{ font-size: 14px; }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	.services .tab-ul li a{ font-size: 14px; height: 130px; padding-top: 60px; }
+	.spcl_padding{ padding-top: 90px !important; }
+}
+
+@media screen and (max-width: 1150px) {
+	.tab-ul{ display: none;}
+	.tab_cnt{ display: block !important; margin-bottom: 10px; }
+	.tab_container{ background: none;}
+	.tab_cnt{ background: rgba(255,255,255,0.5); }
+	.about_tab .tab_cnt{ background: #FFF1D5; }
+	.about_tab .tab_container{ background: none; }
+
+	/**/
+	.home_slider .slider_cnt .absolute h1, .home_slider .slider_cnt .absolute .banner_para, .banner_ul, .home_slider .slider_cnt .absolute a, .banner_logo, .slider_cnt .absolute a{ display: none !important; }
+	.about_tab{ padding: 30px 0; }
+
+}
+
+
+@media screen and (max-width: 1150px) {
+	.banner_logo{ width: 250px; bottom: -100px; }
+	.home_slider .slider_cnt .absolute h1{ font-size: 26px; }
+	.home_slider .slider_cnt .absolute .banner_para{ font-size: 13px;  }
+	.about_us .left_sec, .about_us .right_sec{ width: 100%; padding-right: 0; padding-left: 0; }
+	.about_us .left_sec p, .about_us .right_sec p{ padding-bottom: 15px; }
+	.sec_heading{ font-size: 30px; }
+	.expertise .sec_banner{ height: 300px; }
+	.referenzen{ padding-top: 200px; }
+	.careers .sec_banner{ height: 300px; }
+	.contact .left, .contact .right{ width: 100%; padding-right: 0; padding-left: 0; }
+	.contact .right{ margin-top: 20px; }
+	.careers .left, .careers .right{ width: 100%; padding-left: 0; padding-right: 0; }
+	.careers .right{ padding-top: 15px; }
+	.career_cnt{ padding-bottom: 0; }
+	.careers{ padding-bottom: 0; }
+	.services .tab-ul{ display: none; }
+	.tab_container{ margin-top: 0; }
+	.tab_cnt h2{ display: block; text-transform:uppercase; }
+	.tab_cnt .res_tab{ padding: 20px; display: none; }
+	.tab_cnt{ padding: 0; }
+	.tab_cnt{ margin-left: 0; display: block; margin-bottom: 5px; }
+	.tab_cnt .right h3{ display: none; }
+	header.fixed{ display: none; }
+
+	.newfooter .main_ul .main_li{ width: 100%; margin-bottom: 50px; }
+	.newfooter .half_width{ width: 100%; margin-bottom: 30px; }
+
+	.home_screens .top_bar.active{ position: fixed; padding: 20px 0; top: 0;  z-index: 999999;}
+	.home_screens .top_bar{ transition: all 0.8s ease; }
+
+	.services{ padding: 80px 0; }
+	.contact{ padding: 0; }
+	.contact .left ul li{ padding-bottom: 0; }
+
+	.tab_container{ min-height: auto; }
+
+.about_tab .tab_container{ min-height: auto; }
+
+.home_slider .slider_cnt .absolute h1, .home_slider .slider_cnt .absolute a{ display:block !important; margin-top:0 !important; float:left; text-align:left;}
+.home_slider .slider_cnt .absolute{ padding-left:20px; padding-top:10%;}
+.slider_cnt .absolute a{ width:60px; text-align:center;}
+
+}
+
+@media screen and (max-width: 900px) {
+	.home_slider .slider_cnt .absolute h1{ text-align: left; max-width: 100%; }
+	.home_slider .slider_cnt .absolute .banner_para{ text-align: center; max-width: 100%; padding: 0 5% 15px 5%; }
+	.home_slider .slider_cnt .absolute{ text-align: center; }
+	.home_slider .slider_cnt .absolute a{ float: none; display: inline-block; }
+	.banner_logo{ width: 200px; }
+	
+	.colm-3 .colm-3-li{ width: 100%; margin:0; margin-bottom: 40px; }
+	.colm-3 .colm-3-li:last-child{ margin-bottom: 0; }
+	.colm-3 .colm-3-li p{ text-align: center; }
+	.referenzen .colm-3 .colm-3-li p{ text-align: left; }
+	.colm-3 .colm-3-li h3{ height: auto; }
+
+	.home_screens .top_bar .left_logo{ max-width: 200px; }
+	.home_screens .top_bar .b_menu_btn{ height: 32px; margin:0; margin-top: -6px; }
+	.res_menu_cnt ul li .level_2_ul{ display:none;}
+	
+
+}
+
+
+@media screen and (max-width: 650px) {
+.tab_cnt h2{ font-size: 20px; }
+.tab_cnt .left_image, .tab_cnt .right{ width: 100%; padding-left: 0; padding-right: 0; }
+.tab_cnt .right{ padding-top: 20px; }
+.career_ul li p.special_line_height{ line-height: 31px !important }
+.home_slider .slider_cnt .absolute h1{ font-size:16px;}
+.home_slider .slider_cnt .absolute{ padding-left:50px;}
+
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+	.career_ul li{ width: 100%; }
+	.s_bar .sm{ width: 30px; }
+
+
+}
