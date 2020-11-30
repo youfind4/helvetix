@@ -65,7 +65,8 @@
 
 .home_slider .slider_cnt .absolute h1, .home_slider .slider_cnt .absolute a{ display:block !important; margin-top:0 !important; float:left; text-align:left;}
 .home_slider .slider_cnt .absolute{ padding-left:20px; padding-top:10%;}
-.slider_cnt .absolute a{ width:60px; text-align:center;}
+.slider_cnt .absolute a { width:60px; text-align:center;}
+
 
 }
 
