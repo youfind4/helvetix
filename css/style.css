@@ -121,7 +121,7 @@ header, section, footer, .full_width{float: left; width: 100%;}
 .home_slider .slider_cnt .absolute{ float:left; width: 100%; position: absolute; z-index: 9; top:0; height: 100%; width: 100%; left: 0; padding-top: 5%; }
 .home_slider .slider_cnt .absolute h1{  float:left; width: 100%; max-width: 600px; clear: both; font-size: 40px; font-weight: 300; padding-bottom: 15px; }
 .home_slider .slider_cnt .absolute .banner_para{ float: left; width: 100%; max-width: 500px; clear: both; font-size: 18px; line-height: 30px; padding-bottom: 15px; }
-.home_slider .slider_cnt .absolute a{ float: left; background: #E1666C; line-height: 30px; padding: 0 10px;  color: #FFFFFF; clear: both; }
+.home_slider .slider_cnt .absolute a{ float: left; width: 75px; height: 50px; clear: both; }
 .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{ position: absolute; width: 26px; height: 56px; margin-top:-28px; top:50%; font-size:0px !important; left: 20px; background: url('../img/left-arrow.png') no-repeat center center !important; }
 .owl-carousel .owl-nav .owl-next{ left: auto; right:20px; font-size:0px !important; background: url('../img/right-arrow.png') no-repeat center center !important; }
 .home_slider .owl-theme .owl-nav{margin-top: 0px;}
