@@ -51,7 +51,7 @@ function CheckcomntactForm(form)
 {
 	
 	
-	var errMsg  = "Bitte füllen Sie alle Pflichtfelder aus:\n\n";
+	var errMsg  = "Bitte füllen Sie alle Pflichtfelder aus:.\n\n";
 	var errNum  = 0;
 	var fldName = "";
 	
@@ -66,7 +66,7 @@ function CheckcomntactForm(form)
 	if( (form.email.value != "E-MAIL*" && form.email.value != "") && !isValidEmail(form.email.value) )
 	{
 		if( !errNum ) fldName = "email"; 
-		errMsg += ++errNum + ". E-MAIL\n";
+		errMsg += ++errNum + ". E-MAIL.\n";
 	}
 	if( form.email.value == "" || form.email.value == "E-MAIL*")
 	{ 
