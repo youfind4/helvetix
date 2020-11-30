@@ -139,7 +139,7 @@ animation: jump 2.5s ease 0s infinite normal ;*/   }
 
 /*about_us*/
 .about_us{ float: left; width: 100%;padding: 40px 0; }
-.sec_heading{ float: left; width: 100%; font-size:36px; font-weight: 300; color: #262626; padding-bottom: 30px; }
+.sec_heading{ float: left; width: 100%; font-size:36px; font-weight: 600; color: #262626; padding-bottom: 30px; }
 .about_us .left_sec{float: left; width: 50%; padding-right: 20px; }
 .about_us .right_sec{float: left; width: 50%; padding-left: 20px; }
 .about_us .left_sec p, .about_us .right_sec p{ float: left; width: 100%; text-align: left; color: #959595; line-height: 30px; padding-bottom: 30px; }
