@@ -1,0 +1,6 @@
+.lan{position: absolute; right: 127px; top: 48px; font-weight: bold;}
+.fixed .lan{position: absolute; right: 127px; top: 33px; font-weight: bold;color:#fff!important;}
+.lan a{color: #555;}.fixed .lan a{color:#fff!important;}
+.home_slider .slider_cnt .absolute a{background: transparent!important;}
+.home_slider .slider_cnt .absolute a img{width:100px;position:absolute;left:0;}
+.absolute .wrapper{position:relative;}.banner_ul li.banner_li{border:none!important;background-image: linear-gradient(#F56F26, #FDAD27);border-radius: 0px;color:#fff!important;}.image.Element_Animation_2.active img {width: 90px;}

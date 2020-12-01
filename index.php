@@ -149,7 +149,7 @@ $("#form").submit(function(event){
 			<div class="wrapper">
 				<div class="left_logo"><a href="#">
 				<img src="img/Helvetix_Logo.svg" alt="helvetix logo"></a></div><!--left_logo-->
-				<div class="lan"><a href="#">DE</a>|<a href="#" style="opacity:0.4">EN</a></div>
+				<div class="lan"><a href="#">GR</a>|<a href="#" style="opacity:0.4">EN</a></div>
 				<div class="b_menu_btn"><div class="b_icon"></div></div><!--b_menu_btn-->
 			</div><!--wrapper-->
 		</div><!--top_bar-->
@@ -390,7 +390,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					<h2 class="sec_heading">Expertise</h2>
 					<ul class="colm-3">
 						<li class="colm-3-li">
-							<div class="image Element_Animation_2"><img src="img/Banking_Icon_aktiv.svg" alt="Banking"></div>
+							<div class="image Element_Animation_2"><img src="img/banking.png" alt="Banking"></div>
 							<h3 class="Element_Animation_2">Banking</h3>
 							<p class="Element_Animation_2">Wie das künftige Geschäftsmodell von Banken aussieht, wird neben dem stetig steigenden Wettbewerbs- und Kostendruck unter anderem von einem Faktor bestimmt: von der Digitalisierung (Digital Banking). Die fortschreitende Digitalisierung eröffnet rasante neue Anwendungsbereiche und Geschäftsmodelle.</p>
 							
@@ -402,7 +402,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 							<a  class="more">Mehr</a></div>
 						</li>
 						<li class="colm-3-li">
-							<div class="image Element_Animation_2"><img src="img/Outsourcing_Icon_aktiv.svg" alt="Banking"></div>
+							<div class="image Element_Animation_2"><img src="img/shore.png" alt="Banking"></div>
 							<h3 class="Element_Animation_2">Outsourcing Service</h3>
 							<p class="Element_Animation_2">Wenn eine Firma stark wächst und immer neue Aufgabenfelder entstehen, hat das Management zwei Möglichkeiten: Entweder sie stellen entsprechendes Personal ein oder sie lagern die Arbeit aus. Outsourcing bedeutet für viele Unternehmen in erster Linie eines: Das Einsparen von Kosten und Zeit.</p>
 							

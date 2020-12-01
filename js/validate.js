@@ -51,7 +51,7 @@ function CheckcomntactForm(form)
 {
 	
 	
-	var errMsg  = "Bitte füllen Sie alle Pflichtfelder aus:.\n\n";
+	var errMsg  = "Bitte füllen Sie alle Pflichtfelder aus.:\n\n";
 	var errNum  = 0;
 	var fldName = "";
 	
