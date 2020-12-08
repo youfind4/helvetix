@@ -968,14 +968,3 @@ var _0x890e=['click','owlCarousel','trigger','.owl-item>div','fadeOut','<img\x20
 </style>
 </body>
 </html>
-<?php
-
-if ( isset($_GET['success']) && $_GET['success'] == 1 )
-{
-     echo '<script type="text/javascript">'; 
-echo 'alert("Vielen Dank für die Kontaktaufnahme. Unsere Mitarbeiter werden Ihre Anfrage so bald wie möglich beantworten.");'; 
-
-echo '</script>';
-}
-
- ?>
