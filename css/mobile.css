@@ -1,0 +1,19 @@
+@media screen and (max-width: 1150px){
+.expertise_tab .tab_container{background:none;}
+.team .tab_container {display: block!important;}
+.team .tab_cnt{border-radius: 0 50px 50px 0;}
+.team .tab_cnt{background-image: linear-gradient(#FCC993, #FCCC96);height: 85px;overflow:hidden;}
+.team .tab_cnt h2 b:after { position: absolute; content: ""; width: 50px; height: 50px; background: white; right: 13px; top: 18px; border-radius: 50%; z-index: 1;background-image: linear-gradient(#FFAB70, #FBCC92);}
+.team .tab_cnt h2 b{font-size: 30px; line-height: 70px;}
+.team .tab_cnt.active h2 b:after{background-image: linear-gradient(#FFD1A3, #FFEEDA);}
+.team .tab_cnt.active{background-image: linear-gradient(#FCE3B9, #FFF2E4);}
+.team .tab_cnt.active h2:before, .team .tab_cnt.active h2:after{transform:rotate(45deg);}
+.team .tab_cnt h2:after{top: 41px!important;z-index: 2;right: 27px}.team .tab_cnt h2:before{top: 32px!important;z-index: 2;right: 36px;}
+.res_tab{display:none;}
+.blk{display:block!important;margin-top: 20px; float: left;}
+.tb_scrl {overflow-y: inherit;}
+.blk h3{width: auto;float: left;margin-top: 10px;}
+.blk .top_scl{margin: 0;}
+.top_scl{position: inherit; float: right;}
+.cnt{float: left; width: 100%;}
+.wd{display:block;float: left;width: 100%;}}

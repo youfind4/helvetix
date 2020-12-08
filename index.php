@@ -13,11 +13,13 @@ optimal unterstützen und zudem flexibel und kostensparend sind.">
 <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/mobile.css"/>
 <link rel="stylesheet" type="text/css" href="css/ResponsiveStyle.css"/>
-<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="js/CustomJs.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/mobile.js"></script>
 <script type="text/javascript" src="js/validate.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126465673-1"></script>
@@ -99,13 +101,57 @@ $("#form").submit(function(event){
 
 
     });
-
-
-
-
 </script>
+<script>
+    (function($){
+        $(window).on("load",function(){
+
+        });
+    })(jQuery);
+</script>
+<script>
+$(document).ready(function(){
+$("#up").addClass('bdy');
+function myFunction(x) {
+  if (x.matches) { 
+    $(".bdy .image").attr("src", "img/2.png");
+  } else {
+   $(".bdy .image").attr("src", "img/1.png");
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) 
+x.addListener(myFunction)
+
+});
+</script> <script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+
 </head>
 <body id="up">
+<div class="cont mCustomScrollbar"><header>
+		<div class="logo"><a href="#">
+		<img src="img/Helvetix_Logo.svg" alt="">
+</a></div><!--logo-->
+		<nav>
+			<ul>
+				<li><a href="#about" class="pagescroll about_menu">Über uns</a></li>
+				<li><a class="active pagescroll expertise_menu" href="#expertise">Expertise</a></li>
+				<li><a class="pagescroll referenzen_menu" href="#referenzen">Referenzen</a></li>
+				<li><a class="pagescroll services_menu" href="#services">Services</a></li>
+				<li><a class="pagescroll team_menu" href="#team">Team</a></li>
+				<li><a class="pagescroll careers_menu" href="#careers">Karriere</a></li>
+				<li><a class="pagescroll contact_menu" href="#contact">Kontakt</a></li>
+			</ul>
+		</nav>
+		<div class="lan"><a href="#">DE</a>|<a href="#" style="opacity:0.4">EN</a></div>
+	</header><span>
 	<div class="body_dark"></div>
 	<div class="res_menu">
 		<div class="relative">
@@ -129,6 +175,7 @@ $("#form").submit(function(event){
 							<li class="level_2_li"><a class="pagescroll" id="bm_6" href="#services">Schulungen</a></li>
 						</ul>
 					</li>
+					<li class="level_1_li ser"><a class="pagescroll mobsub" href="#team">Team</a>
 					<li class="level_1_li"><a class="pagescroll" href="#careers">Karriere</a></li>
 					<li class="level_1_li"><a class="pagescroll" href="#contact">Kontakt</a></li>
 				</ul>
@@ -149,8 +196,7 @@ $("#form").submit(function(event){
 			<div class="wrapper">
 				<div class="left_logo"><a href="#">
 				<img src="img/Helvetix_Logo.svg" alt="helvetix logo"></a></div><!--left_logo-->
-				<div class="lan"><a href="#">GR</a>|<a href="#" style="opacity:0.4">EN</a></div>
-				<div class="b_menu_btn"><div class="b_icon"></div></div><!--b_menu_btn-->
+				<div class="b_menu_btn"><div class="b_icon"></div></div><div class="lan"><a href="#">DE</a>|<a href="#" style="opacity:0.4">EN</a></div><!--b_menu_btn-->
 			</div><!--wrapper-->
 		</div><!--top_bar-->
 		<div class="home_slider">
@@ -164,7 +210,7 @@ $("#form").submit(function(event){
 dollars you have. […] It’s not about money. It’s about the people you have, how you’re led, and how much you get it.”
 </p>
 <p class="banner_para blkTxt">Steve Jobs, Apple Gründer<br/>(* 24. Februar 1955; † 5. Oktober 2011)</p>
-	            				<!--<a href="#">Mehr</a>-->
+	            				<!--<a href="#"><img src="img/Mehr_button.svg" alt="image slider"/></a>-->
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
 	            		<img src="img/banner_1.jpg" alt="image slider"/>
@@ -275,22 +321,7 @@ Schulungsunterlagen und führen Schulungen auch selber durch. Wir bieten im Proj
 		</div><!--home_slider-->
 		
 	</div><!--home_screens-->
-	<header>
-		<div class="logo"><a href="#">
-		<img src="img/Helvetix_Logo.svg" alt="">
-</a></div><!--logo-->
-		<nav>
-			<ul>
-				<li><a href="#about" class="pagescroll about_menu">Über uns</a></li>
-				<li><a class="active pagescroll expertise_menu" href="#expertise">Expertise</a></li>
-				<li><a class="pagescroll referenzen_menu" href="#referenzen">Referenzen</a></li>
-				<li><a class="pagescroll services_menu" href="#services">Services</a></li>
-				<li><a class="pagescroll careers_menu" href="#careers">Karriere</a></li>
-				<li><a class="pagescroll contact_menu" href="#contact">Kontakt</a></li>
-			</ul>
-		</nav>
-		
-	</header>
+
 	<section>
 		<div class="about_us" id="about">
 			<div class="wrapper">
@@ -380,9 +411,8 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 				<!--<p class="sp">Unsere Socialmedia-Kanäle</p>-->
 			</div><!--wrapper-->
 		</div><!--s_bar-->
-
-
-		<div class="expertise" id="expertise">
+		
+<div class="expertise" id="expertise">
 			<div class="sec_banner">
 			</div><!--sec_banner-->
 			<div class="full_width expertise_cnt">
@@ -390,7 +420,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					<h2 class="sec_heading">Expertise</h2>
 					<ul class="colm-3">
 						<li class="colm-3-li">
-							<div class="image Element_Animation_2"><img src="img/banking.png" alt="Banking"></div>
+							<div class="image Element_Animation_2"><img src="img/banking.svg" alt="Banking"></div>
 							<h3 class="Element_Animation_2">Banking</h3>
 							<p class="Element_Animation_2">Wie das künftige Geschäftsmodell von Banken aussieht, wird neben dem stetig steigenden Wettbewerbs- und Kostendruck unter anderem von einem Faktor bestimmt: von der Digitalisierung (Digital Banking). Die fortschreitende Digitalisierung eröffnet rasante neue Anwendungsbereiche und Geschäftsmodelle.</p>
 							
@@ -402,8 +432,8 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 							<a  class="more">Mehr</a></div>
 						</li>
 						<li class="colm-3-li">
-							<div class="image Element_Animation_2"><img src="img/shore.png" alt="Banking"></div>
-							<h3 class="Element_Animation_2">Outsourcing Service</h3>
+							<div class="image Element_Animation_2"><img src="img/outsource.svg" alt="Banking"></div>
+							<h3 class="Element_Animation_2">Nearshore & Offshore<br/>Outsourcing</h3>
 							<p class="Element_Animation_2">Wenn eine Firma stark wächst und immer neue Aufgabenfelder entstehen, hat das Management zwei Möglichkeiten: Entweder sie stellen entsprechendes Personal ein oder sie lagern die Arbeit aus. Outsourcing bedeutet für viele Unternehmen in erster Linie eines: Das Einsparen von Kosten und Zeit.</p>
 							
 							<div class="full_width" id="morecnt">
@@ -413,8 +443,8 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 							<div class="morebtn_div"><a  class="more">Mehr</a></div>
 						</li>
 						<li class="colm-3-li">
-							<div class="image Element_Animation_2"><img src="img/ERP_Icon_aktiv.svg" alt="Banking"></div>
-							<h3 class="Element_Animation_2">Enterprise Resource Planning(ERP)</h3>
+							<div class="image Element_Animation_2"><img src="img/erp.svg" alt="Banking"></div>
+							<h3 class="Element_Animation_2">Data Integrity</h3>
 							<p class="Element_Animation_2">Mit der Globalisierung und Automatisierung von Prozessen müssen Daten weltweit abrufbar sein. Nebst einem lückenlosen Berechtigungskonzept spielt die Datenintegrität einen entscheidenden Faktor. Im Büro können wir unsere Arbeitskollegen mit den eigenen Augen sehen und wissen somit, dass die erhaltenen Informationen von der gewünschten Person stammen. Arbeiten Personen im Ausland, wird die Überprüfung der Integrität bereits schwieriger. Wir können zwar mittels Login und Passwort den Zugang einschränken, aber nicht ausschliessen, dass diese Informationen von Dritten gestohlen werden.</p>
 							
 							<div class="full_width" id="morecnt">
@@ -427,54 +457,188 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 				</div><!--wrapper-->
 			</div><!--full_width-->
 		</div><!--expertise-->
-		<div class="referenzen" id="referenzen">
+
+		
+		
+		
+		
+<div class="referenzen" id="referenzen">
 			<div class="wrapper">
 				<h2 class="sec_heading">Referenzen</h2>
 				<div class="full_width">
-					<ul class="colm-3">
-						<li class="colm-3-li Element_Animation_2">
-							<h3>Zahlungsverkehr Schweiz (ISO20022 & SWIFT)</h3>
-							<p>Im Rahmen der Umstellung des Schweizerischen Zahlungsverkehr auf den international Standard ISO20022 unterstützen wir mehrere nationale wie internationale Finanzinstitute mit unserem fundierten Know-how. Dies sowohl an der Schnittstelle Kunde-Bank als auch im Interbankenbereich. Wir bieten fachliche, methodische und technische Beratung bei der Modernisierung und Standardisierung der Zahlungsverkehrsprozesse um die Transaktionen kostengünstig abzuwickeln.</p>
-						</li>
-						<li class="colm-3-li Element_Animation_2">
-							<h3>DATA INTEGRITY</h3>
-							<p>Bei zentralen Projekten haben wir Anforderungen zur
-	Integrität bzw. Konsistenz, für Datenbanken mit buchhalterischen Daten, umgesetzt.
-	</p>
-	<p>Ausserdem haben wir bereits diverse Lösungen im Bereich 
-	Datenintegrität für unsere Kunden entwickelt und nutzen dabei unter anderem die Blockchain-Technologie.
-	</p>
-						</li>
-						
-					</ul>
+					<div class="expertise_tab" id="">
+			<div class="wrapper">
+				<ul class="tab-ul">
+					<li class="active" tab_head="ex_one">
+						<a>Unsere VISION</a>
+					</li>
+					<li tab_head="ex_two">
+						<a>Unsere Mission</a>
+					</li>
+					<li tab_head="ex_three">
+						<a>Unsere Werte</a>
+					</li>
+
+
+				</ul>
+				<div class="tab_container">
+					<div class="tab_cnt active" id="ex_one"><h2>Unsere Mission</h2>
+						<div class="res_tab">
+ 
+ 
+ 
+ 
+ 
+ 
+
+ <div class="owl-carousel owl-theme slider3">
+    <div class="item mCustomScrollbar" data-mcs-theme="dark"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+	</div>
+	    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+		</div>
+		    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+			</div>
+			    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+				</div>
+				    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+					</div>
+					    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+						</div>
+						    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+							</div>
+</div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+						</div><!--res_tab-->
+					</div><!--tab_cnt-->
+
+					<div class="tab_cnt" id="ex_two">
+						<h2>Unsere Mission</h2>
+						<div class="res_tab">
+							
+							
+							
+							
+							
+							
+							
+					 <div class="owl-carousel owl-theme slider3">
+    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+	</div>
+	    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+		</div>
+		    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+			</div>
+			    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+				</div>
+				    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+					</div>
+					    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+						</div>
+						    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+							</div>
+</div>
+
+
+							
+						</div><!--res_tab-->
+					</div><!--tab_cnt-->
+
+
+					<div class="tab_cnt" id="ex_three">
+						<h2>Unsere Werte</h2>
+						<div class="res_tab">
+
+
+<div class="owl-carousel owl-theme slider3">
+    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+	</div>
+	    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+		</div>
+		    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+			</div>
+			    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+				</div>
+				    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+					</div>
+					    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+						</div>
+						    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+							</div>
+</div>
+
+
+						</div><!--res_tab-->
+					</div><!--tab_cnt-->
+
+				</div><!--tab_container-->
+			</div><!--wrapper-->
+		</div>
 				</div><!--full_width-->
-				<div class="full_width second_line">
-					<ul class="colm-3">
-						<li class="colm-3-li Element_Animation_2">
-							<h3>Nearshore & Offshore Outsourcing Projekte</h3>
-							<p>Für eine internationale Grossbank durften wir eine Nearshore und eine Offshore Delivery Center aufbauen. Dazu zählten Tätigkeiten wie:</p>
-							<ul>
-								<li>Internationales Projektmanagement</li>
-								<li>Koordination zwischen den involvierten Stakeholdern & Konfliktmanagement</li>
-								<li>Sicherstellung von kundeninternen Prozessen</li>
-								<li>Schulung und Coaching der Mitarbeitenden</li>
-								<li>Staffing in den Delivery Centern</li>
-							</ul>
-						</li>
-						<li class="colm-3-li Element_Animation_2">
-							<h3>Datenmigration</h3>
-							<p>Bei der Einführung von BaNCS (Kernbanktransformation) für den Bereich Zahlungsverkehr (Credit & Debit Transfer) haben wir funktionale & nicht-funktionale Anforderungen definiert und komplexe Probleme mit einfachverständlichen Grafiken (e.g. UML-Modelle, etc.) heruntergebrochen.</p>
-							<p>Ausserdem haben wir bei einem Kundenprojekt diverse Kontogruppen aus dem alten Kernbanksystem ins SAP DM überführt. Mit der Überführung konnten neue Funktionalitäten implementiert und die Prozesse optimiert werden.</p>
-						</li>
+				
+				
+<div class="container">
+  <div class="owl-carousel owl-theme slider4">
+    <div><img src="img/consign_web_PostFinance.jpg" alt=""></div>
+    <div><img src="img/assential.jpg" alt=""></div>
+    <div><img src="img/dxc_technology.jpg" alt=""></div>
+    <div><img src="img/barclays.jpg" alt=""></div>
+    <div><img src="img/zurcher_kantonalbank.jpg" alt=""></div>
+    <div><img src="img/rothschild.jpg" alt=""></div>
+    <div><img src="img/fides.jpg" alt=""></div>
+	<div><img src="img/kalaidos_fachhochschule_schweiz.jpg" alt=""></div>
+	<div><img src="img/bekb_bcbe.jpg" alt=""></div>
+  </div>
+</div>
+<style>
+.slider4 .owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+.slider4 .owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+.slider4 .owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+</style>
+
+				
+					<!-- <ul class="colm-3"> -->
+						<!-- <li class="colm-3-li Element_Animation_2"> -->
+							<!-- <h3>Nearshore & Offshore Outsourcing Projekte</h3> -->
+							<!-- <p>Für eine internationale Grossbank durften wir eine Nearshore und eine Offshore Delivery Center aufbauen. Dazu zählten Tätigkeiten wie:</p> -->
+							<!-- <ul> -->
+								<!-- <li>Internationales Projektmanagement</li> -->
+								<!-- <li>Koordination zwischen den involvierten Stakeholdern & Konfliktmanagement</li> -->
+								<!-- <li>Sicherstellung von kundeninternen Prozessen</li> -->
+								<!-- <li>Schulung und Coaching der Mitarbeitenden</li> -->
+								<!-- <li>Staffing in den Delivery Centern</li> -->
+							<!-- </ul> -->
+						<!-- </li> -->
+						<!-- <li class="colm-3-li Element_Animation_2"> -->
+							<!-- <h3>Datenmigration</h3> -->
+							<!-- <p>Bei der Einführung von BaNCS (Kernbanktransformation) für den Bereich Zahlungsverkehr (Credit & Debit Transfer) haben wir funktionale & nicht-funktionale Anforderungen definiert und komplexe Probleme mit einfachverständlichen Grafiken (e.g. UML-Modelle, etc.) heruntergebrochen.</p> -->
+							<!-- <p>Ausserdem haben wir bei einem Kundenprojekt diverse Kontogruppen aus dem alten Kernbanksystem ins SAP DM überführt. Mit der Überführung konnten neue Funktionalitäten implementiert und die Prozesse optimiert werden.</p> -->
+						<!-- </li> -->
 						
-						<li class="colm-3-li Element_Animation_2">
-							<h3>Treasury & Cash Management</h3>
-							<p>In Zusammenhang mit der AVALOQ-Einführung (Kernbanktransformation) für den Bereich Treasury & Cash Management haben wir die Business Analyse und Qualitätssicherung von diversen AVALOQ-Modulen sichergestellt.</p>
-						</li>
-					</ul>
-				</div><!--full_width-->
+						<!-- <li class="colm-3-li Element_Animation_2"> -->
+							<!-- <h3>Treasury & Cash Management</h3> -->
+							<!-- <p>In Zusammenhang mit der AVALOQ-Einführung (Kernbanktransformation) für den Bereich Treasury & Cash Management haben wir die Business Analyse und Qualitätssicherung von diversen AVALOQ-Modulen sichergestellt.</p> -->
+						<!-- </li> -->
+					<!-- </ul> -->
+				<!--full_width-->
 			</div><!--wrapper-->
 		</div><!--referenzen-->
+		
+		
 		<div class="services" id="services">
 			<div class="wrapper">
 				<h2 class="sec_heading">Services</h2>
@@ -595,6 +759,10 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 				</div><!--tab_container-->
 			</div><!--wrapper-->
 		</div><!--services-->
+		
+	
+		
+		
 		<div class="careers" id="careers">
 			<div class="sec_banner">
 			</div><!--sec_banner-->
@@ -707,15 +875,11 @@ Kann ich mich mit dem, was ich tue, wirklich identifizieren?</p>
 	
 	<div class="newfooter">
 		<div class="wrapper">
-			<h2 class="pd-b-20">Impressum</h2>
+			<a href="#"><img src="img/Helvetix_Logo.svg" alt=""></a>
 			<ul class="main_ul">
 				<li class="main_li">
 					<div class="sec">
 						<h3>HELVETIX Consulting GmbH</h3>
-						<p>Bruggerstrasse 56A<br/>5400 Baden</p>
-					</div><!--sec-->
-					<div class="sec">
-						<h3>Büroanschrift</h3>
 						<p>Bruggerstrasse 56A<br/>5400 Baden</p>
 					</div><!--sec-->
 					<div class="sec">
@@ -728,10 +892,6 @@ Kann ich mich mit dem, was ich tue, wirklich identifizieren?</p>
 						<p>Praveen Nellissery</p>
 					</div><!--sec-->
 					<div class="sec">
-						<h3>Handelsregister-Nummer</h3>
-						<p>CH-170.4.012.866-6</p>
-					</div><!--sec-->
-					<div class="sec">
 						<h3>Unternehmens-Identifikationsnummer (UID)</h3>
 						<p>CHE-199.068.154</p>
 					</div><!--sec-->
@@ -742,11 +902,6 @@ Kann ich mich mit dem, was ich tue, wirklich identifizieren?</p>
 						<p>info@helvetix.com</p>
 					</div><!--sec-->
 					<div class="sec">
-						<h3>Bildnachweis</h3>
-						<p>Einige Icons und Bilder auf dieser Website unterliegen dem Copyright des folgenden Designer:</p>
-						<p>© designed by marczwahlen@mac.com</p>
-					</div><!--sec-->
-					<div class="sec">
 						<h3>Konzept & Design</h3>
 						<p>Marc Zwahlen<br/>marczwahlen@mac.com</p>
 					</div><!--sec-->
@@ -754,29 +909,38 @@ Kann ich mich mit dem, was ich tue, wirklich identifizieren?</p>
 						<h3>Programmierung</h3>
 						<p>Youfind4.com<br/>info@youfind4.com</p>
 					</div><!--sec-->
+				</li>
+								<li class="main_li">
+					<div class="sec">
+						<p><div class="pdf_bdg">PDF</div><a href="https://helvetix.ch/img/Allgemeine-Gesch%C3%A4ftsbedingungen-(AGB).pdf">Allgemeine Geschäftsbedingungen (AGB)</a></p>
+					</div>
+					<div class="sec">
+						<p><div class="pdf_bdg">PDF</div><a href="#">Haftung für Links und Inhalte</a></p>
+					</div>
+					<div class="sec">
+						<p><div class="pdf_bdg">PDF</div><a href="https://helvetix.ch/img/Datenschutzerkl%C3%A4rung.pdf">Datenschutzerklärung</a></p>
+					</div>
+					<div class="sec">
+						<p><div class="pdf_bdg">PDF</div><a href="#">Urheberrecht</a></p>
+					</div>					
+				<!--sec-->
 				</li><!--main_li-->
 			</ul>
 
-			<div class="full_width pdf_div">
-				<div class="half_width">
-					<div class="icon"><a href="img/Datenschutzerklärung.pdf" target="_blank"><img src="img/pdf_icon.png" alt="pdf"/></a></div>
-					<p class="txt">Datenschutzerklärung </p>
-				</div><!--half_width-->
-				<div class="half_width">
-					<div class="icon"><a href="img/Allgemeine-Geschäftsbedingungen-(AGB).pdf" target="_blank"><img src="img/pdf_icon.png" alt="pdf"/></a></div>
-					<p class="txt">Allgemeine Geschäftsbedingungen (AGB)</p>
-				</div><!--half_width-->
-			</div><!--full_width-->
+			<!-- <div class="full_width pdf_div"> -->
+				<!-- <div class="half_width"> -->
+					<!-- <div class="icon"><a href="img/Datenschutzerklärung.pdf" target="_blank"><img src="img/pdf_icon.png" alt="pdf"/></a></div> -->
+					<!-- <p class="txt">Datenschutzerklärung </p> -->
+				<!-- </div><!--half_width-->
+				<!-- <div class="half_width"> -->
+					<!-- <div class="icon"><a href="img/Allgemeine-Geschäftsbedingungen-(AGB).pdf" target="_blank"><img src="img/pdf_icon.png" alt="pdf"/></a></div> -->
+					<!-- <p class="txt">Allgemeine Geschäftsbedingungen (AGB)</p> -->
+				<!-- </div><!--half_width--> 
+			<!-- </div><!--full_width--> 
 			<!--<div class="pdf_link"><a href="img/Datenschutzerklärung.pdf" target="_blank"><img src="img/pdf_icon.png" alt="pdf"/></a></div>-->
-			<h2>Haftung für Inhalte</h2>
-			<p class="main_txt">Die Inhalte unserer Seiten wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäss § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
 
-			<h2 class="m-top">Haftung für Links</h2>
-			<p class="main_txt">Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstösse überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-
-			<h2 class="m-top">Urheberrecht</h2>
-			<p class="main_txt m-bottom">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 		</div><!--wrapper-->
+	</div><!--newfooter-->
 		<div class="s_bar">
 			<div class="wrapper">
 				<div class="sm "><a href="https://www.google.com/maps/place/HELVETIX+Consulting+GmbH/@47.477967,8.3020393,17z/data=!3m1!4b1!4m5!3m4!1s0x47906d2acabd6c7f:0x243c9c0f9c78cb13!8m2!3d47.477967!4d8.304228"><img src="img/sm-1.png" alt="Address"></a></div>
@@ -789,35 +953,20 @@ Kann ich mich mit dem, was ich tue, wirklich identifizieren?</p>
 				<!--<p class="sp">Unsere Socialmedia-Kanäle</p>-->
 			</div><!--wrapper-->
 		</div><!--s_bar-->
-	</div><!--newfooter-->
-
 	<div class="cookie_full active">
 		<button class="btn">OK,<br/>verstanden</button>
 		<p class="txt">Website Tutor nutzt Cookies, um bestmögliche Funktionalität bieten zu können. <a class="link" target="_blank" href="img/Datenschutzerklärung.pdf">Mehr Infos</a></p>
-	</div><!--cookie_full-->
-</body>
-<script>
-	jQuery(document).ready(function($) {
-		$('.main-slider').owlCarousel({
-                items: 1,
-                animateOut: 'fadeOut',
-                loop: true,
-                margin: 0,
-                autoplay: true,
-                autoplayTimeout:16000,
-                dots: false,
-                nav: true,
-                navigationText: ["<img src='img/left-arrow.png'>","<img src='img/right-arrow.png'>"],
-
-              });
-		});
+	</div><!--cookie_full--></span>
+</div>
+ <script>
+var _0x890e=['click','owlCarousel','trigger','.owl-item>div','fadeOut','<img\x20src=\x27img/left-arrow.png\x27>','<img\x20src=\x27img/right-arrow.png\x27>','attr','.owl-carousel.owl-theme.slider3','ready','each','data-position','.owl-carousel.owl-theme.slider4'];(function(_0x33d0db,_0x5b2a3c){var _0x890e59=function(_0xe4eef){while(--_0xe4eef){_0x33d0db['push'](_0x33d0db['shift']());}};_0x890e59(++_0x5b2a3c);}(_0x890e,0x110));var _0xe4ee=function(_0x33d0db,_0x5b2a3c){_0x33d0db=_0x33d0db-0x78;var _0x890e59=_0x890e[_0x33d0db];return _0x890e59;};var _0x188ae7=_0xe4ee;$(document)[_0x188ae7(0x82)](function(){var _0x5c5a4f=_0x188ae7,_0x23655b=$(_0x5c5a4f(0x81));_0x23655b[_0x5c5a4f(0x7a)]({'margin':0xa,'nav':!![],'loop':!![],'responsive':{0x0:{'items':0x1},0x258:{'items':0x3},0x3e8:{'items':0x3}}});}),jQuery(document)['ready'](function(_0x45cec3){var _0x87f10f=_0x188ae7;_0x45cec3('.main-slider')[_0x87f10f(0x7a)]({'items':0x1,'animateOut':_0x87f10f(0x7d),'loop':!![],'margin':0x0,'autoplay':!![],'autoplayTimeout':0x3e80,'dots':![],'nav':!![],'navigationText':[_0x87f10f(0x7e),_0x87f10f(0x7f)]});});var $owl=$(_0x188ae7(0x78));$owl['children']()[_0x188ae7(0x83)](function(_0x1d5ff0){var _0x34fdc7=_0x188ae7;$(this)[_0x34fdc7(0x80)](_0x34fdc7(0x84),_0x1d5ff0);}),$owl['owlCarousel']({'center':!![],'loop':!![],'items':0x5,'loop':!![],'autoplayHoverPause':!![],'margin':0x0,'autoplay':!![],'autoplayTimeout':0x640,'dots':![],'nav':!![],'navSpeed':0x1,'navigationText':[_0x188ae7(0x7e),_0x188ae7(0x7f)]}),$(document)['on'](_0x188ae7(0x79),_0x188ae7(0x7c),function(){var _0xe1e6ee=_0x188ae7,_0x1cbf99=0x12c;$owl[_0xe1e6ee(0x7b)]('to.owl.carousel',[$(this)['data']('position'),_0x1cbf99]);});
 </script>
 <style>
 /*.tab_cnt{display:none !important;}
 .tab_cnt.active{ display:block !important;}*/
 
 </style>
-
+</body>
 </html>
 <?php
 

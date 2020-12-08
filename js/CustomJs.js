@@ -79,6 +79,16 @@ $(document).ready(function(){
 			$('.services_menu').removeClass('active');
 		}  
 	});
+	var teamCnt = $('#team').offset().top;
+	$(window).scroll(function() {  
+		if ($(window).scrollTop() > teamCnt) {
+			$('header nav ul li a').removeClass('active');
+			$('.team_menu').addClass('active');
+		}
+		else {
+			$('.team_menu').removeClass('active');
+		}  
+	});
 	var careersCnt = $('#careers').offset().top;
 	$(window).scroll(function() {  
 		if ($(window).scrollTop() > careersCnt) {
@@ -134,12 +144,29 @@ $(document).ready(function(){
 	$(".about_tab .tab-ul li").click(function(){
 		$(".about_tab .tab-ul li").removeClass('active');
 		$(this).addClass('active');
-		var serviceMenu = $(this).attr("tab_head");
+		var aboutMenu = $(this).attr("tab_head");
 		$(".about_tab .tab_cnt").hide();
+		$("#"+aboutMenu).fadeIn(2000);
+		console.log(aboutMenu);
+	});
+
+	$(".expertise_tab .tab-ul li").click(function(){
+		$(".expertise_tab .tab-ul li").removeClass('active');
+		$(this).addClass('active');
+		var serviceMenu = $(this).attr("tab_head");
+		$(".expertise_tab .tab_cnt").hide();
 		$("#"+serviceMenu).fadeIn(2000);
 		console.log(serviceMenu);
 	});
 
+$(".team .tab-ul li").click(function(){
+		$(".team .tab-ul li").removeClass('active');
+		$(this).addClass('active');
+		var teamMenu = $(this).attr("tab_head");
+		$(".team .tab_cnt").hide();
+		$("#"+teamMenu).fadeIn(2000);
+		console.log(teamMenu);
+	});
 
 
 	$(".home_screens .top_bar .b_menu_btn").click(function(){
