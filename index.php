@@ -583,6 +583,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 				
 				
 <div class="container">
+<h6 class="slhd">AUSGEWAHLTE REFERENZEN</h6>
   <div class="owl-carousel owl-theme slider4">
     <div><img src="img/consign_web_PostFinance.jpg" alt=""></div>
     <div><img src="img/assential.jpg" alt=""></div>
@@ -760,7 +761,11 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 			</div><!--wrapper-->
 		</div><!--services-->
 		
-	
+	<div class="team" id="team">
+			
+				
+		</div><!--services-->	
+		
 		
 		
 		<div class="careers" id="careers">
@@ -968,3 +973,14 @@ var _0x890e=['click','owlCarousel','trigger','.owl-item>div','fadeOut','<img\x20
 </style>
 </body>
 </html>
+<?php
+
+if ( isset($_GET['success']) && $_GET['success'] == 1 )
+{
+     echo '<script type="text/javascript">'; 
+echo 'alert("Vielen Dank für die Kontaktaufnahme. Unsere Mitarbeiter werden Ihre Anfrage so bald wie möglich beantworten.");'; 
+
+echo '</script>';
+}
+
+ ?>
