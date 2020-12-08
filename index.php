@@ -470,13 +470,13 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 			<div class="wrapper">
 				<ul class="tab-ul">
 					<li class="active" tab_head="ex_one">
-						<a>Unsere VISION</a>
+						<a>Banking</a>
 					</li>
 					<li tab_head="ex_two">
-						<a>Unsere Mission</a>
+						<a>Outsourcing Service</a>
 					</li>
 					<li tab_head="ex_three">
-						<a>Unsere Werte</a>
+						<a>Enterprise Resource Planning (ERP)</a>
 					</li>
 
 
@@ -762,8 +762,123 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 		</div><!--services-->
 		
 	<div class="team" id="team">
-			
-				
+			<div class="wrapper">
+				<h2 class="sec_heading">Team<div class="close-btn"><img src="img/close.png" alt="images" class="close-img"><div class="close-txt">CLOSE</div></div></h2>
+				<ul class="tab-ul">
+					<li tab_head="one1"><div class="thumb_parent"><img src="img/Praveen_Nellissery-thumbnai.png"><div class="thumb_txt"><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</div></div>
+						<a><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</a>
+					</li>
+					<li tab_head="two2"><div class="thumb_parent"><img src="img/Matthias_Rueegg-thumbnail.png"><div class="thumb_txt"><b>Matthias Rueegg</b><br>Senior Consultant</div></div>
+						<a><b>Matthias Rueegg</b><br>Senior Consultant</a>
+					</li>
+					<li tab_head="three3"><div class="thumb_parent"><img src="img/Sharon_Feybli_Ang-thumbnail.png"><div class="thumb_txt"><b>Sharon Feybli-Ang</b><br>Senior Consultant</div></div>
+						<a><b>Sharon Feybli-Ang</b><br>Senior Consultant</a>
+					</li>
+
+
+				</ul>
+				<div class="tab_container">
+					<div class="tab_cnt active"  id="one1" style="display: block;">
+						<h2><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</h2>
+						<div class="res_tab">
+							<div class="left_image">
+								<img src="img/Praveen_Nellissery.jpg" alt="images"/>
+							</div><!--left_image-->
+							<div class="right">
+								<h3><b>Praveen Nellissery|&nbsp;&nbsp;</b>CEO &amp; Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Pravee.nellissery@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<div class="tb_scrl">
+								<h5>WER ICH BIN</h5>
+								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
+								
+								<h5>MEIN EXPERTISEN</h5>
+<ul>
+	<li>Expertise 1</li>
+	<li>Expertise 2</li>
+	<li>Expertise 3</li>
+</ul>
+<ul>
+	<li>Expertise 4</li>
+	<li>Expertise 5</li>
+	<li>Expertise 6</li>
+</ul>
+								
+								<h5>DARUM HELVETIX CONSULTING</h5>
+								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p></div>
+
+							</div><!--right-->
+						</div><!--res_tab-->
+					</div><!--tab_cnt-->
+
+					<div class="tab_cnt"  id="two2">
+						<h2><b>Matthias Rueegg</b><br>Senior Consultant</h2>
+						<div class="res_tab">
+							<div class="left_image">
+								<img src="img/Matthias_Rueegg.jpg" alt="images"/>
+							</div><!--left_image-->
+							<div class="right">
+								<h3><b>Matthias Rueegg|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Matthias.rueegg@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<div class="tb_scrl">
+								<h5>WER ICH BIN</h5>
+								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
+								
+								<h5>MEIN EXPERTISEN</h5>
+<ul>
+	<li>Expertise 1</li>
+	<li>Expertise 2</li>
+	<li>Expertise 3</li>
+</ul>
+<ul>
+	<li>Expertise 4</li>
+	<li>Expertise 5</li>
+	<li>Expertise 6</li>
+</ul>
+								
+								<h5>DARUM HELVETIX CONSULTING</h5>
+								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p></div>
+							</div><!--right-->
+						</div><!--res_tab-->
+					</div><!--tab_cnt-->
+
+
+					<div class="tab_cnt"  id="three3">
+						<h2><b>Sharon Feybli-Ang</b><br>Senior Consultant</h2>
+						<div class="res_tab">
+							<div class="left_image">
+								<img src="img/Sharon_Feybli_Ang.jpg" alt="images"/>
+							</div><!--left_image-->
+							<div class="right">
+								<h3><b>Sharon Feybli-Ang|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Sharon.feybliang@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<div class="tb_scrl">
+								<h5>WER ICH BIN</h5>
+								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
+								
+								<h5>MEIN EXPERTISEN</h5>
+<ul>
+	<li>Expertise 1</li>
+	<li>Expertise 2</li>
+	<li>Expertise 3</li>
+</ul>
+<ul>
+	<li>Expertise 4</li>
+	<li>Expertise 5</li>
+	<li>Expertise 6</li>
+</ul>
+								
+								<h5>DARUM HELVETIX CONSULTING</h5>
+								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p></div>
+							</div><!--right-->
+						</div><!--res_tab-->
+					</div><!--tab_cnt-->
+
+					
+
+
+
+					
+
+
+				</div><!--tab_container-->
+			</div><!--wrapper-->
 		</div><!--services-->	
 		
 		
