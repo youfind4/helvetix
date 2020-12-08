@@ -470,13 +470,13 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 			<div class="wrapper">
 				<ul class="tab-ul">
 					<li class="active" tab_head="ex_one">
-						<a>Unsere VISION</a>
+						<a>Banking</a>
 					</li>
 					<li tab_head="ex_two">
-						<a>Unsere Mission</a>
+						<a>Outsourcing Service</a>
 					</li>
 					<li tab_head="ex_three">
-						<a>Unsere Werte</a>
+						<a>Enterprise Resource Planning (ERP)</a>
 					</li>
 
 
