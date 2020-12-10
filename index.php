@@ -764,6 +764,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 	<div class="team" id="team">
 			<div class="wrapper">
 				<h2 class="sec_heading">Team<div class="close-btn"><img src="img/close.png" alt="images" class="close-img"><div class="close-txt">CLOSE</div></div></h2>
+				<p class="subtxt">Klicken Sie auf ein Teammitglied für weitere Infos.</p>
 				<ul class="tab-ul">
 					<li tab_head="one1"><div class="thumb_parent"><img src="img/Praveen_Nellissery-thumbnai.png"><div class="thumb_txt"><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</div></div>
 						<a><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</a>
