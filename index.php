@@ -769,8 +769,8 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					<li tab_head="one1"><div class="thumb_parent"><img src="img/Praveen_Nellissery-thumbnai.png"><div class="thumb_txt"><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</div></div>
 						<a><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</a>
 					</li>
-					<li tab_head="two2"><div class="thumb_parent"><img src="img/Matthias_Rueegg-thumbnail.png"><div class="thumb_txt"><b>Matthias Rueegg</b><br>Senior Consultant</div></div>
-						<a><b>Matthias Rueegg</b><br>Senior Consultant</a>
+					<li tab_head="two2"><div class="thumb_parent"><img src="img/Matthias_Rueegg-thumbnail.png"><div class="thumb_txt"><b>Matthias Rüegg</b><br>Senior Consultant</div></div>
+						<a><b>Matthias Rüegg</b><br>Senior Consultant</a>
 					</li>
 					<li tab_head="three3"><div class="thumb_parent"><img src="img/Sharon_Feybli_Ang-thumbnail.png"><div class="thumb_txt"><b>Sharon Feybli-Ang</b><br>Senior Consultant</div></div>
 						<a><b>Sharon Feybli-Ang</b><br>Senior Consultant</a>
@@ -786,7 +786,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 								<img src="img/Praveen_Nellissery.jpg" alt="images"/>
 							</div><!--left_image-->
 							<div class="right">
-								<h3><b>Praveen Nellissery|&nbsp;&nbsp;</b>CEO &amp; Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Pravee.nellissery@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<h3><b>Praveen Nellissery|&nbsp;&nbsp;</b>CEO &amp; Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">pravee.nellissery@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
 								<div class="tb_scrl">
 								<h5>WER ICH BIN</h5>
 								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
@@ -811,13 +811,13 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt"  id="two2">
-						<h2><b>Matthias Rueegg</b><br>Senior Consultant</h2>
+						<h2><b>Matthias Rüegg</b><br>Senior Consultant</h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/Matthias_Rueegg.jpg" alt="images"/>
 							</div><!--left_image-->
 							<div class="right">
-								<h3><b>Matthias Rueegg|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Matthias.rueegg@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<h3><b>Matthias Rüegg|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">matthias.rueegg@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
 								<div class="tb_scrl">
 								<h5>WER ICH BIN</h5>
 								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
@@ -848,7 +848,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 								<img src="img/Sharon_Feybli_Ang.jpg" alt="images"/>
 							</div><!--left_image-->
 							<div class="right">
-								<h3><b>Sharon Feybli-Ang|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Sharon.feybliang@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<h3><b>Sharon Feybli-Ang|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">sharon.feybliang@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
 								<div class="tb_scrl">
 								<h5>WER ICH BIN</h5>
 								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
