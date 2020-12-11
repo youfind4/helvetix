@@ -228,7 +228,7 @@ header.fixed{ transform: scale(1,1); opacity: 1; visibility: visible; z-index: 9
 .contact .right .form_bg ul li .InputTxt{  float: left; width: 100%; border:none; background: #FEEDCE; line-height: 58px; padding: 0 20px; text-transform: uppercase; color: #8297a7; }
 .contact .right .form_bg ul li .txtArea{float: left; width: 100%; border:none; background: #FEEDCE; line-height: 35px; font-size: 14px; padding: 0 20px; text-transform: uppercase; color: #8297a7; }
 .contact .right .form_bg ul li .inline{ float: left; width: auto; display: inline-block; padding-right: 20px; }
-.contact .right .form_bg .btn{ position: absolute; width: 70px; height: 70px; right: 0; bottom: 0; z-index: 9; background: url(../img/btn.png) no-repeat center center, #E94338; color: #FFFFFF; text-align: center; border:none; cursor: pointer; }
+.contact .right .form_bg .btn{ position: absolute; width: 70px; height: 70px; right: 0; bottom: 0; z-index: 9; background: url(../img/Ok_Box.svg) no-repeat center center, #E94338; color: #FFFFFF; text-align: center; border:none; cursor: pointer; }
 
 /*Custom Check box*/
 .styled-checkbox { position: absolute;opacity: 0;}
