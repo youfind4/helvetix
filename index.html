@@ -102,101 +102,12 @@ $("#form").submit(function(event){
 
     });
 </script>
-<script>
-   (function () {
+<style>
 
-    var scrollContainer = document.querySelector('.scrollable'),
-        scrollContentWrapper = document.querySelector('.scrollable .content-wrapper'),
-        scrollContent = document.querySelector('.scrollable .content'),
-        contentPosition = 0,
-        scrollerBeingDragged = false,
-        scroller,
-        topPosition,
-        scrollerHeight;
-
-    function calculateScrollerHeight() {
-        // *Calculation of how tall scroller should be
-        var visibleRatio = scrollContainer.offsetHeight / scrollContentWrapper.scrollHeight;
-        return visibleRatio * scrollContainer.offsetHeight;
-    }
-
-    function moveScroller(evt) {
-        // Move Scroll bar to top offset
-        var scrollPercentage = evt.target.scrollTop / scrollContentWrapper.scrollHeight;
-        topPosition = scrollPercentage * (scrollContainer.offsetHeight - 5); // 5px arbitrary offset so scroll bar doesn't move too far beyond content wrapper bounding box
-        scroller.style.top = topPosition + 'px';
-    }
-
-    function startDrag(evt) {
-        normalizedPosition = evt.pageY;
-        contentPosition = scrollContentWrapper.scrollTop;
-        scrollerBeingDragged = true;
-    }
-
-    function stopDrag(evt) {
-        scrollerBeingDragged = false;
-    }
-
-    function scrollBarScroll(evt) {
-        if (scrollerBeingDragged === true) {
-            var mouseDifferential = evt.pageY - normalizedPosition;
-            var scrollEquivalent = mouseDifferential * (scrollContentWrapper.scrollHeight / scrollContainer.offsetHeight);
-            scrollContentWrapper.scrollTop = contentPosition + scrollEquivalent;
-        }
-    }
-
-    function createScroller() {
-        // *Creates scroller element and appends to '.scrollable' div
-        // create scroller element
-        scroller = document.createElement("div");
-        scroller.className = 'scroller';
-
-        // determine how big scroller should be based on content
-        scrollerHeight = calculateScrollerHeight();
-        
-        if (scrollerHeight / scrollContainer.offsetHeight < 1){
-            // *If there is a need to have scroll bar based on content size
-            scroller.style.height = scrollerHeight + 'px';
-
-            // append scroller to scrollContainer div
-            scrollContainer.appendChild(scroller);
-            
-            // show scroll path divot
-            scrollContainer.className += ' showScroll';
-            
-            // attach related draggable listeners
-            scroller.addEventListener('mousedown', startDrag);
-            window.addEventListener('mouseup', stopDrag);
-            window.addEventListener('mousemove', scrollBarScroll)
-        }
-        
-    }
-
-    createScroller();
-
-
-    // *** Listeners ***
-    scrollContentWrapper.addEventListener('scroll', moveScroller);
-}());
-</script>
-<script>
-$(document).ready(function(){
-$("#up").addClass('bdy');
-function myFunction(x) {
-  if (x.matches) { 
-    $(".bdy .image").attr("src", "img/2.png");
-  } else {
-   $(".bdy .image").attr("src", "img/1.png");
-  }
-}
-
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x) 
-x.addListener(myFunction)
-
-});
-</script>
-
+</style>
+// <script>
+// var _0x13a6=['(max-width:\x20480px)','attr','img/853/1.jpg','matchMedia','img/853/3.jpg','.bdy\x20.image-1','addClass','(max-height:\x20853px)','ready','.bdy\x20.image-5','.bdy\x20.image-8','img/853/2.jpg','#up','img/853/6.jpg','img/853/5.jpg','src','.bdy\x20.image-7'];(function(_0x58b3b0,_0x5018ee){var _0x13a6a6=function(_0x1827b4){while(--_0x1827b4){_0x58b3b0['push'](_0x58b3b0['shift']());}};_0x13a6a6(++_0x5018ee);}(_0x13a6,0x178));var _0x1827=function(_0x58b3b0,_0x5018ee){_0x58b3b0=_0x58b3b0-0x133;var _0x13a6a6=_0x13a6[_0x58b3b0];return _0x13a6a6;};var _0x3c64a7=_0x1827;$(document)[_0x3c64a7(0x139)](function(){var _0x101568=_0x3c64a7;window[_0x101568(0x134)](_0x101568(0x142),_0x101568(0x138))['matches']&&($(_0x101568(0x13d))[_0x101568(0x137)]('bdy'),$(_0x101568(0x136))[_0x101568(0x143)](_0x101568(0x140),_0x101568(0x133)),$('.bdy\x20.image-2')['attr']('src',_0x101568(0x13c)),$('.bdy\x20.image-3')['attr'](_0x101568(0x140),_0x101568(0x135)),$('.bdy\x20.image-4')[_0x101568(0x143)]('src','img/853/4.jpg'),$(_0x101568(0x13a))[_0x101568(0x143)](_0x101568(0x140),_0x101568(0x13f)),$('.bdy\x20.image-6')[_0x101568(0x143)]('src',_0x101568(0x13e)),$(_0x101568(0x141))[_0x101568(0x143)](_0x101568(0x140),'img/853/7.jpg'),$(_0x101568(0x13b))[_0x101568(0x143)]('src','img/853/8.jpg'));});
+// </script>
 </head>
 <body id="up">
 <div class="cont mCustomScrollbar"><header>
@@ -277,7 +188,7 @@ dollars you have. […] It’s not about money. It’s about the people you have
 	            				<!--<a href="#"><img src="img/Mehr_button.svg" alt="image slider"/></a>-->
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/banner_1.jpg" alt="image slider"/>
+	            		<img src="img/banner_1.jpg" alt="image slider" class="image-1"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 
@@ -294,7 +205,7 @@ dollars you have. […] It’s not about money. It’s about the people you have
 	            				<a style="margin-top: 20px;" class="pagescroll" href="#expertise"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_7.jpg" alt="image slider"/>
+	            		<img src="img/home_7.jpg" alt="image slider" class="image-2"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 
@@ -310,7 +221,7 @@ Kunden? Diese Frage steht im Zentrum jedes unternehmerischen Handelns. Als Busin
 	            				<a href="#services" class="pagescroll" id="b_1"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_1.jpg" alt="image slider"/>
+	            		<img src="img/home_1.jpg" alt="image slider" class="image-3"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -323,7 +234,7 @@ Realisierung Ihrer Projekte. Unsere erfahrenen Projekt Manager übernehmen die p
 	            				<a href="#services" class="pagescroll" id="b_2"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_2.jpg" alt="image slider"/>
+	            		<img src="img/home_2.jpg" alt="image slider" class="image-4"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -336,7 +247,7 @@ den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen 
 	            				<a href="#services" class="pagescroll" id="b_3"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_5.jpg" alt="image slider"/>
+	            		<img src="img/home_5.jpg" alt="image slider" class="image-5"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -348,7 +259,7 @@ den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen 
 	            				<a href="#services" class="pagescroll" id="b_4"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_3.jpg" alt="image slider"/>
+	            		<img src="img/home_3.jpg" alt="image slider" class="image-6"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -360,7 +271,7 @@ den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen 
 	            				<a href="#services" class="pagescroll" id="b_5"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_4.jpg" alt="image slider"/>
+	            		<img src="img/home_4.jpg" alt="image slider" class="image-7"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -373,7 +284,7 @@ Schulungsunterlagen und führen Schulungen auch selber durch. Wir bieten im Proj
 	            				<a href="#services" class="pagescroll" id="b_6"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_6.jpg" alt="image slider"/>
+	            		<img src="img/home_6.jpg" alt="image slider" class="image-8"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 
@@ -407,7 +318,7 @@ Schulungsunterlagen und führen Schulungen auch selber durch. Wir bieten im Proj
 				</ul>
 				<div class="tab_container">
 					<div class="tab_cnt active"  id="ab_one">
-						<h2>Unsere Vision</h2>
+						<h2><span>Unsere Vision</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/about_1.jpg" alt="images"/>
@@ -425,7 +336,7 @@ Haben Sie ein Problem und wissen nicht wie dieses zu lösen ist? Möchten Sie Ih
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt"  id="ab_two">
-						<h2>Unsere Mission</h2>
+						<h2><span>Unsere Mission</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/about_2.jpg" alt="images"/>
@@ -441,7 +352,7 @@ Dank unserer Unabhängigkeit haben wir Spielraum für unkonventionelle Ideen. Di
 
 
 					<div class="tab_cnt"  id="ab_three">
-						<h2>Unsere Werte</h2>
+						<h2><span>Unsere Werte</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/about_3.jpg" alt="images"/>
@@ -830,7 +741,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 	<div class="team" id="team">
 			<div class="wrapper">
 				<h2 class="sec_heading">Team<div class="close-btn"><img src="img/close.png" alt="images" class="close-img"><div class="close-txt">CLOSE</div></div></h2>
-				<p class="subtxt">Klicken Sie auf ein Teammitglied für weitere Infos.</p>
+				<div class="subtxt">Klicken sie auf ein Teammitglied fur weitere infos.</div>
 				<ul class="tab-ul">
 					<li tab_head="one1"><div class="thumb_parent"><img src="img/Praveen_Nellissery-thumbnai.png"><div class="thumb_txt"><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</div></div>
 						<a><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</a>
@@ -1155,5 +1066,14 @@ var _0x890e=['click','owlCarousel','trigger','.owl-item>div','fadeOut','<img\x20
 </style>
 </body>
 </html>
-<?php
+<!--<?php
 
+if ( isset($_GET['success']) && $_GET['success'] == 1 )
+{
+     echo '<script type="text/javascript">'; 
+echo 'alert("Vielen Dank für die Kontaktaufnahme. Unsere Mitarbeiter werden Ihre Anfrage so bald wie möglich beantworten.");'; 
+
+echo '</script>';
+}
+
+ ?>-->
