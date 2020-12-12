@@ -153,10 +153,10 @@ $(document).ready(function(){
 	$(".expertise_tab .tab-ul li").click(function(){
 		$(".expertise_tab .tab-ul li").removeClass('active');
 		$(this).addClass('active');
-		var serviceMenu = $(this).attr("tab_head");
+		var expertiseMenu = $(this).attr("tab_head");
 		$(".expertise_tab .tab_cnt").hide();
-		$("#"+serviceMenu).fadeIn(2000);
-		console.log(serviceMenu);
+		$("#"+expertiseMenu).fadeIn(2000);
+		console.log(expertiseMenu);
 	});
 
 $(".team .tab-ul li").click(function(){

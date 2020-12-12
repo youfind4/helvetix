@@ -81,7 +81,7 @@ header, section, footer, .full_width{float: left; width: 100%;}
 
 .body_dark{ position: fixed;left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.0); z-index: 9999999; visibility: hidden; opacity: 0; transition:all 0.8s ease; -webkit-transition:all 0.8s ease; }
 .body_dark.active{ background: rgba(0,0,0,0.8); visibility: visible; opacity: 1; }
-.res_menu{ position: fixed; top: 0; right: -500px; width: 300px; height: 100%; display: table; z-index: 99999999999; /*transform: scale(0,1); */visibility: hidden; opacity: 0; transition:all 0.8s ease; -webkit-transition:all 0.8s ease; background: rgba(0,0,0,0.5);}
+.res_menu{ position: fixed; top: 0; right: -500px; width: 300px; height: 100vh; display: table; z-index: 99999999999; /*transform: scale(0,1); */visibility: hidden; opacity: 0; transition:all 0.8s ease; -webkit-transition:all 0.8s ease; background: rgba(0,0,0,0.5);}
 .res_menu.active{/*transform: scale(1,1); */visibility: visible; opacity: 1; right: 0;}
 .res_menu .relative{ float: right; width: 300px; height: 100vh; display: table-cell; position: relative; padding: 30px; background-image: linear-gradient(to bottom right, rgba(236, 91, 63, 1), rgba(251, 200, 109, 1)); }
 .res_menu .relative .header{ float: left; width: 100%; padding-bottom: 20px; }
@@ -139,7 +139,7 @@ animation: jump 2.5s ease 0s infinite normal ;*/   }
 
 /*about_us*/
 .about_us{ float: left; width: 100%;padding: 40px 0; }
-.sec_heading{ float: left; width: 100%; font-size:36px; font-weight: 500; color: #262626; padding-bottom: 30px; }
+.sec_heading{ float: left; width: 100%; font-size:36px; font-weight: 300; color: #262626; padding-bottom: 30px; }
 .about_us .left_sec{float: left; width: 50%; padding-right: 20px; }
 .about_us .right_sec{float: left; width: 50%; padding-left: 20px; }
 .about_us .left_sec p, .about_us .right_sec p{ float: left; width: 100%; text-align: left; color: #959595; line-height: 30px; padding-bottom: 30px; }
@@ -228,7 +228,7 @@ header.fixed{ transform: scale(1,1); opacity: 1; visibility: visible; z-index: 9
 .contact .right .form_bg ul li .InputTxt{  float: left; width: 100%; border:none; background: #FEEDCE; line-height: 58px; padding: 0 20px; text-transform: uppercase; color: #8297a7; }
 .contact .right .form_bg ul li .txtArea{float: left; width: 100%; border:none; background: #FEEDCE; line-height: 35px; font-size: 14px; padding: 0 20px; text-transform: uppercase; color: #8297a7; }
 .contact .right .form_bg ul li .inline{ float: left; width: auto; display: inline-block; padding-right: 20px; }
-.contact .right .form_bg .btn{ position: absolute; width: 70px; height: 70px; right: 0; bottom: 0; z-index: 9; background: url(../img/Ok_Box.svg) no-repeat center center, #E94338; color: #FFFFFF; text-align: center; border:none; cursor: pointer; }
+.contact .right .form_bg .btn{ position: absolute; width: 70px; height: 70px; right: 0; bottom: 0; z-index: 9; background: url(../img/btn.png) no-repeat center center, #E94338; color: #FFFFFF; text-align: center; border:none; cursor: pointer; }
 
 /*Custom Check box*/
 .styled-checkbox { position: absolute;opacity: 0;}

@@ -32,7 +32,7 @@ optimal unterstützen und zudem flexibel und kostensparend sind.">
 </script>
 <script>
   $(document).ready(function() {
-    $("#boxscroll").niceScroll({cursorborder:"#f5f5f5",cursorcolor:"#FFFFFF",boxzoom:true}); // First scrollable DIV
+
 
 //Email Area
 // Variable to hold request
@@ -102,37 +102,12 @@ $("#form").submit(function(event){
 
     });
 </script>
+<style>
+
+</style>
 <script>
-    (function($){
-        $(window).on("load",function(){
-
-        });
-    })(jQuery);
+var _0x13a6=['(max-width:\x20480px)','attr','img/853/1.jpg','matchMedia','img/853/3.jpg','.bdy\x20.image-1','addClass','(max-height:\x20853px)','ready','.bdy\x20.image-5','.bdy\x20.image-8','img/853/2.jpg','#up','img/853/6.jpg','img/853/5.jpg','src','.bdy\x20.image-7'];(function(_0x58b3b0,_0x5018ee){var _0x13a6a6=function(_0x1827b4){while(--_0x1827b4){_0x58b3b0['push'](_0x58b3b0['shift']());}};_0x13a6a6(++_0x5018ee);}(_0x13a6,0x178));var _0x1827=function(_0x58b3b0,_0x5018ee){_0x58b3b0=_0x58b3b0-0x133;var _0x13a6a6=_0x13a6[_0x58b3b0];return _0x13a6a6;};var _0x3c64a7=_0x1827;$(document)[_0x3c64a7(0x139)](function(){var _0x101568=_0x3c64a7;window[_0x101568(0x134)](_0x101568(0x142),_0x101568(0x138))['matches']&&($(_0x101568(0x13d))[_0x101568(0x137)]('bdy'),$(_0x101568(0x136))[_0x101568(0x143)](_0x101568(0x140),_0x101568(0x133)),$('.bdy\x20.image-2')['attr']('src',_0x101568(0x13c)),$('.bdy\x20.image-3')['attr'](_0x101568(0x140),_0x101568(0x135)),$('.bdy\x20.image-4')[_0x101568(0x143)]('src','img/853/4.jpg'),$(_0x101568(0x13a))[_0x101568(0x143)](_0x101568(0x140),_0x101568(0x13f)),$('.bdy\x20.image-6')[_0x101568(0x143)]('src',_0x101568(0x13e)),$(_0x101568(0x141))[_0x101568(0x143)](_0x101568(0x140),'img/853/7.jpg'),$(_0x101568(0x13b))[_0x101568(0x143)]('src','img/853/8.jpg'));});
 </script>
-<script>
-$(document).ready(function(){
-$("#up").addClass('bdy');
-function myFunction(x) {
-  if (x.matches) { 
-    $(".bdy .image").attr("src", "img/2.png");
-  } else {
-   $(".bdy .image").attr("src", "img/1.png");
-  }
-}
-
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x) 
-x.addListener(myFunction)
-
-});
-</script> <script>
-    (function($){
-        $(window).on("load",function(){
-            $(".content").mCustomScrollbar();
-        });
-    })(jQuery);
-</script>
-
 </head>
 <body id="up">
 <div class="cont mCustomScrollbar"><header>
@@ -213,7 +188,7 @@ dollars you have. […] It’s not about money. It’s about the people you have
 	            				<!--<a href="#"><img src="img/Mehr_button.svg" alt="image slider"/></a>-->
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/banner_1.jpg" alt="image slider"/>
+	            		<img src="img/banner_1.jpg" alt="image slider" class="image-1"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 
@@ -230,7 +205,7 @@ dollars you have. […] It’s not about money. It’s about the people you have
 	            				<a style="margin-top: 20px;" class="pagescroll" href="#expertise"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_7.jpg" alt="image slider"/>
+	            		<img src="img/home_7.jpg" alt="image slider" class="image-2"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 
@@ -246,7 +221,7 @@ Kunden? Diese Frage steht im Zentrum jedes unternehmerischen Handelns. Als Busin
 	            				<a href="#services" class="pagescroll" id="b_1"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_1.jpg" alt="image slider"/>
+	            		<img src="img/home_1.jpg" alt="image slider" class="image-3"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -259,7 +234,7 @@ Realisierung Ihrer Projekte. Unsere erfahrenen Projekt Manager übernehmen die p
 	            				<a href="#services" class="pagescroll" id="b_2"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_2.jpg" alt="image slider"/>
+	            		<img src="img/home_2.jpg" alt="image slider" class="image-4"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -272,7 +247,7 @@ den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen 
 	            				<a href="#services" class="pagescroll" id="b_3"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_5.jpg" alt="image slider"/>
+	            		<img src="img/home_5.jpg" alt="image slider" class="image-5"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -284,7 +259,7 @@ den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen 
 	            				<a href="#services" class="pagescroll" id="b_4"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_3.jpg" alt="image slider"/>
+	            		<img src="img/home_3.jpg" alt="image slider" class="image-6"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -296,7 +271,7 @@ den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen 
 	            				<a href="#services" class="pagescroll" id="b_5"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_4.jpg" alt="image slider"/>
+	            		<img src="img/home_4.jpg" alt="image slider" class="image-7"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 	            <div class="item">
@@ -309,7 +284,7 @@ Schulungsunterlagen und führen Schulungen auch selber durch. Wir bieten im Proj
 	            				<a href="#services" class="pagescroll" id="b_6"><img src="img/Mehr_button.svg" alt="image slider"/></a>
 	            			</div><!--wrapper-->
 	            		</div><!--absolute-->
-	            		<img src="img/home_6.jpg" alt="image slider"/>
+	            		<img src="img/home_6.jpg" alt="image slider" class="image-8"/>
 	            	</div><!--slider_cnt-->
 	            </div><!--item-->
 
@@ -343,7 +318,7 @@ Schulungsunterlagen und führen Schulungen auch selber durch. Wir bieten im Proj
 				</ul>
 				<div class="tab_container">
 					<div class="tab_cnt active"  id="ab_one">
-						<h2>Unsere Vision</h2>
+						<h2><span>Unsere Vision</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/about_1.jpg" alt="images"/>
@@ -361,7 +336,7 @@ Haben Sie ein Problem und wissen nicht wie dieses zu lösen ist? Möchten Sie Ih
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt"  id="ab_two">
-						<h2>Unsere Mission</h2>
+						<h2><span>Unsere Mission</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/about_2.jpg" alt="images"/>
@@ -377,7 +352,7 @@ Dank unserer Unabhängigkeit haben wir Spielraum für unkonventionelle Ideen. Di
 
 
 					<div class="tab_cnt"  id="ab_three">
-						<h2>Unsere Werte</h2>
+						<h2><span>Unsere Werte</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/about_3.jpg" alt="images"/>
@@ -398,7 +373,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 			</div><!--wrapper-->
 		</div><!--about_us-->
 				
-		<div class="s_bar">
+		<div class="s_bar tp">
 			<div class="wrapper">
 				
 				<div class="sm "><a href="https://www.google.com/maps/place/HELVETIX+Consulting+GmbH/@47.477967,8.3020393,17z/data=!3m1!4b1!4m5!3m4!1s0x47906d2acabd6c7f:0x243c9c0f9c78cb13!8m2!3d47.477967!4d8.304228"><img src="img/sm-1.png" alt="Address"></a></div>
@@ -461,11 +436,12 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 		
 		
 		
-		
+	
 <div class="referenzen" id="referenzen">
 			<div class="wrapper">
 				<h2 class="sec_heading">Referenzen</h2>
 				<div class="full_width">
+				<div class="ref_mbl"></div>	
 					<div class="expertise_tab" id="">
 			<div class="wrapper">
 				<ul class="tab-ul">
@@ -482,7 +458,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 
 				</ul>
 				<div class="tab_container">
-					<div class="tab_cnt active" id="ex_one"><h2>Unsere Mission</h2>
+					<div class="tab_cnt active" id="ex_one"><h2>Banking</h2>
 						<div class="res_tab">
  
  
@@ -492,7 +468,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
  
 
  <div class="owl-carousel owl-theme slider3">
-    <div class="item mCustomScrollbar" data-mcs-theme="dark"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
+    <div class="item" data-mcs-theme="dark"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
 	</div>
 	    <div class="item"><h4>We’re excited to announce the new Google Analytics</h4><p>designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p><p>We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.We’re excited to announce the new Google Analytics, designed to give you the essential insights that you need to be ready for what’s next. You can access the new Google Analytics experience by setting up a Google Analytics 4 property, formerly known as 'App + Web' property.</p>
 		</div>
@@ -518,7 +494,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt" id="ex_two">
-						<h2>Unsere Mission</h2>
+						<h2>Outsourcing Service</h2>
 						<div class="res_tab">
 							
 							
@@ -551,7 +527,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 
 
 					<div class="tab_cnt" id="ex_three">
-						<h2>Unsere Werte</h2>
+						<h2>Enterprise Resource Planning (ERP)</h2>
 						<div class="res_tab">
 
 
@@ -595,8 +571,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 	<div><img src="img/kalaidos_fachhochschule_schweiz.jpg" alt=""></div>
 	<div><img src="img/bekb_bcbe.jpg" alt=""></div>
   </div>
-</div>
-<style>
+  <style>
 .slider4 .owl-item > div {
   cursor: pointer;
   margin: 6% 8%;
@@ -610,6 +585,8 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
   opacity: .75;
 }
 </style>
+</div>
+
 
 				
 					<!-- <ul class="colm-3"> -->
@@ -666,7 +643,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 				</ul>
 				<div class="tab_container">
 					<div class="tab_cnt active"  id="one">
-						<h2>Business Consulting</h2>
+						<h2><span>Business Consulting</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/business_consulting.png" alt="images"/>
@@ -682,7 +659,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt"  id="two">
-						<h2>Projekt Management</h2>
+						<h2><span>Projekt Management</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/project_management.png" alt="images"/>
@@ -698,7 +675,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 
 
 					<div class="tab_cnt"  id="three">
-						<h2>Requirement Engineering</h2>
+						<h2><span>Requirement Engineering</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/requirement_engineering.png" alt="images"/>
@@ -712,7 +689,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt"  id="four">
-						<h2>Software entwicklung</h2>
+						<h2><span>Software entwicklung</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/software.png" alt="images"/>
@@ -726,7 +703,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt"  id="five">
-						<h2>Testing Excellence</h2>
+						<h2><span>Testing Excellence</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/testing_excelence.png" alt="images"/>
@@ -741,7 +718,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt"  id="six">
-						<h2>Schulungen</h2>
+						<h2><span>Schulungen</span></h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/Training.png" alt="images"/>
@@ -763,14 +740,14 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 		
 	<div class="team" id="team">
 			<div class="wrapper">
-				<h2 class="sec_heading">Team<div class="close-btn"><img src="img/close.png" alt="images" class="close-img"><div class="close-txt">CLOSE</div></div></h2>
-				<p class="subtxt">Klicken Sie auf ein Teammitglied für weitere Infos.</p>
+				<h2 class="sec_heading">Team<div class="close-btn"><a href="#team"><img src="img/close.png" alt="images" class="close-img"></a><div class="close-txt">CLOSE</div></div></h2>
+				<div class="subtxt">Klicken sie auf ein Teammitglied fur weitere infos.</div>
 				<ul class="tab-ul">
 					<li tab_head="one1"><div class="thumb_parent"><img src="img/Praveen_Nellissery-thumbnai.png"><div class="thumb_txt"><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</div></div>
 						<a><b>Praveen Nellissery</b><br>CEO &amp; Senior Consultant</a>
 					</li>
-					<li tab_head="two2"><div class="thumb_parent"><img src="img/Matthias_Rueegg-thumbnail.png"><div class="thumb_txt"><b>Matthias Rüegg</b><br>Senior Consultant</div></div>
-						<a><b>Matthias Rüegg</b><br>Senior Consultant</a>
+					<li tab_head="two2"><div class="thumb_parent"><img src="img/Matthias_Rueegg-thumbnail.png"><div class="thumb_txt"><b>Matthias Rueegg</b><br>Senior Consultant</div></div>
+						<a><b>Matthias Rueegg</b><br>Senior Consultant</a>
 					</li>
 					<li tab_head="three3"><div class="thumb_parent"><img src="img/Sharon_Feybli_Ang-thumbnail.png"><div class="thumb_txt"><b>Sharon Feybli-Ang</b><br>Senior Consultant</div></div>
 						<a><b>Sharon Feybli-Ang</b><br>Senior Consultant</a>
@@ -786,7 +763,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 								<img src="img/Praveen_Nellissery.jpg" alt="images"/>
 							</div><!--left_image-->
 							<div class="right">
-								<h3><b>Praveen Nellissery|&nbsp;&nbsp;</b>CEO &amp; Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">pravee.nellissery@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<h3><b>Praveen Nellissery|&nbsp;&nbsp;</b>CEO &amp; Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Pravee.nellissery@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
 								<div class="tb_scrl">
 								<h5>WER ICH BIN</h5>
 								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
@@ -804,20 +781,20 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 </ul>
 								
 								<h5>DARUM HELVETIX CONSULTING</h5>
-								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p></div>
+								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p><div class="btm_cls">ZURUK ZUM TEAM<img src="img/Close.svg" alt="Helvetix LinkedIn" class="top_scl"/></div></div>
 
 							</div><!--right-->
 						</div><!--res_tab-->
 					</div><!--tab_cnt-->
 
 					<div class="tab_cnt"  id="two2">
-						<h2><b>Matthias Rüegg</b><br>Senior Consultant</h2>
+						<h2><b>Matthias Rueegg</b><br>Senior Consultant</h2>
 						<div class="res_tab">
 							<div class="left_image">
 								<img src="img/Matthias_Rueegg.jpg" alt="images"/>
 							</div><!--left_image-->
 							<div class="right">
-								<h3><b>Matthias Rüegg|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">matthias.rueegg@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<h3><b>Matthias Rueegg|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Matthias.rueegg@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
 								<div class="tb_scrl">
 								<h5>WER ICH BIN</h5>
 								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
@@ -835,7 +812,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 </ul>
 								
 								<h5>DARUM HELVETIX CONSULTING</h5>
-								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p></div>
+								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p><div class="btm_cls">ZURUK ZUM TEAM<img src="img/Close.svg" alt="Helvetix LinkedIn" class="top_scl"/></div></div>
 							</div><!--right-->
 						</div><!--res_tab-->
 					</div><!--tab_cnt-->
@@ -848,7 +825,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 								<img src="img/Sharon_Feybli_Ang.jpg" alt="images"/>
 							</div><!--left_image-->
 							<div class="right">
-								<h3><b>Sharon Feybli-Ang|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">sharon.feybliang@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
+								<h3><b>Sharon Feybli-Ang|&nbsp;&nbsp;</b>Senior Consultant<img src="img/LinkedIn.svg" alt="Helvetix LinkedIn" class="top_scl"/><img src="img/Xing.svg" alt="Helvetix Xing" class="top_scl"/></h3><div class="cnt"><span class="wd"><img src="img/Telefon.svg" alt="Helvetix Telefon" class="top_scl"/><a href="#">+41 56 209 02 72</a></span><span class="wd"><img src="img/Mail.svg" alt="Helvetix E-mail" class="top_scl"/><a href="#">Sharon.feybliang@helvetix.com</a></span><span class="wd"><img src="img/Download.svg" alt="Helvetix Download" class="top_scl" style="width: 28px;"/><a href="#">Download vCard</a></span></div>
 								<div class="tb_scrl">
 								<h5>WER ICH BIN</h5>
 								<p>Für das Requirements Engineering, wie auch für die Softwareentwicklung, gilt: Es ist ein Erfolgsfaktor. Die Anforderungen bezüglich Innovation und Sicherheit nehmen stetig zu. Klare und vollständige Anforderungsspezifikationen sind daher ausschlaggebend.</p>
@@ -866,7 +843,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 </ul>
 								
 								<h5>DARUM HELVETIX CONSULTING</h5>
-								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p></div>
+								<p>Das Zusammenführen von unterschiedlichen Stakeholder-Meinungen, wie auch das Fokussieren auf wesentliche Bereiche, müssen systematisch erfolgen. Im Requirements Engineering unterstützen wir Sie bei den grundlegenden Vorgehensansätze der klassischen und agilen Welt und stellen das Dokumentieren, Verwalten und Prüfen von Anforderungen sicher.</p><div class="btm_cls">ZURUK ZUM TEAM<img src="img/Close.svg" alt="Helvetix LinkedIn" class="top_scl"/></div></div>
 							</div><!--right-->
 						</div><!--res_tab-->
 					</div><!--tab_cnt-->
@@ -880,7 +857,7 @@ Dank unserer Erfolge profitieren unsere Partner von erprobtem Know-how, ausgewie
 
 				</div><!--tab_container-->
 			</div><!--wrapper-->
-		</div><!--services-->	
+		</div><!--team-->	
 		
 		
 		

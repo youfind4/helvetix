@@ -18,7 +18,7 @@
 	.about_tab .tab_container{ background: none; }
 
 	/**/
-	.home_slider .slider_cnt .absolute h1, .home_slider .slider_cnt .absolute .banner_para, .banner_ul, .home_slider .slider_cnt .absolute a, .banner_logo, .slider_cnt .absolute a{ display: none !important; }
+	.home_slider .slider_cnt .absolute h1, .home_slider .slider_cnt .absolute .banner_para, .banner_ul, .home_slider .slider_cnt .absolute a, .banner_logo, .slider_cnt .absolute a{ display: block !important; }
 	.about_tab{ padding: 30px 0; }
 
 }
